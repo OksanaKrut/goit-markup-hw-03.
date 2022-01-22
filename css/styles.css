@@ -27,7 +27,6 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
 }
 
 img {
@@ -52,6 +51,7 @@ a {
 }
 
 .container {
+    box-sizing: border-box;
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -175,6 +175,10 @@ a {
 
 }
 
+.header-nav-list {
+    display: flex;
+}
+
 .hero-title {
     font-weight: 900;
     font-size: 44px;
@@ -222,6 +226,10 @@ a {
 
 .feature {
     padding-bottom: 94px;
+}
+
+.feature-list {
+    display: flex;
 }
 
 .feature-item {
@@ -295,11 +303,13 @@ a {
     color: var(--first-title-color);
     margin-bottom: 50px;
     text-align: center;
+    padding-top: 94px;
 }
 
 .team-list {
     display: flex;
     margin-left: -30px;
+    padding-bottom: 94px;
 }
 
 .team-item {
@@ -325,8 +335,6 @@ a {
 .team-img {
     display: block;
     max-width: 100%;
-    /* width: 270px;
-    height: 260px; */
 }
 
 .team {
@@ -335,6 +343,7 @@ a {
 
 .team-section {
     padding-top: 0;
+    background: #F5F4FA;
 }
 
 .team-item-container {
@@ -362,20 +371,20 @@ a {
 /*-------------------FILTERS-------------------*/
 
 .filters {
-    display: flex;
     padding-bottom: 94px;
-    
+    padding-top: 94px;
 }
 
 .filters-list {
     justify-content: center;
-    margin-top: 94px;
+    margin-bottom: 50px;
+    display: flex;
 }
 
-.filter-list-container {
+/* .filter-list-container {
     display: flex;  
     margin-bottom: 34px;
-}
+} */
 
 .filters-item:not(:last-child) {
     margin-right: 8px;
@@ -411,6 +420,8 @@ a {
 .projects-list {
     display: flex;
     flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
 }
 
 .project-item {
@@ -420,26 +431,13 @@ a {
 .projects-item:not(:last-child) {
     margin-right: 30px;
     margin-bottom: 30px;
-    margin-top: 4px;
 
     /* width: calc(100% / 9 - 30px);
     margin-left: 30px;
     margin-bottom: 30px; */
 }
 
-.projects-item-container {
-    width: 370px;
-    height: 404px;
-    left: 215px;
-    top: 262px;
-
-    background: #FFFFFF;
-    border: 1px solid #EEEEEE;
-    box-sizing: border-box;
-}
-
 .projects-img {
-    margin-bottom: 20px;
     display: block;
     max-width: 100%;
     height: auto;
@@ -450,9 +448,6 @@ a {
     border-left: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
-    /* border-right: 24px;
-    border-bottom: 20px;
-    border-right: 24px; */
 }
 
 .projects-title {
@@ -469,7 +464,7 @@ a {
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
-    /* margin-bottom: 20px; */
+ 
 }
 
 /*-------------------FOOTER-------------------*/
