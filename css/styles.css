@@ -59,6 +59,11 @@ a {
     /* outline: 2px solid red; */
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -339,12 +344,13 @@ a {
 
 .team {
     background: #F5F4FA;
+    padding-top: 0;
 }
 
-.team-section {
+/* .team-section {
     padding-top: 0;
-    background: #F5F4FA;
-}
+
+} */
 
 .team-item-container {
     padding-top: 30px;
